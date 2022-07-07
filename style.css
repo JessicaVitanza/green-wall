@@ -71,13 +71,15 @@ h3{
     font-size: xx-large;
     letter-spacing: 2px;
     font-family: 'Patrick Hand', cursive;
-  
-   
+   margin-bottom: -10px;
+   margin-top: 30px;
+   text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.173);
 }
 
 .text-home{
     margin: 20px;
     font-family: 'Patrick Hand', cursive;
+    margin-right: -15px;
 }
 
 p{
@@ -85,6 +87,17 @@ p{
     line-height: 30px;
     margin: 20px;
     font-size: larger;
+}
+
+.flower{
+    color: rgb(198, 19, 195);
+    font-size: larger;
+}
+
+.list{
+ text-transform: uppercase;
+ font-size: larger;
+ letter-spacing: 1px;
 }
 
 .img-home{
@@ -143,7 +156,6 @@ h6{
     letter-spacing: 3px;
     text-shadow: 2px 2px 3px black;
     background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -160,6 +172,7 @@ h6{
     -ms-animation: rotateWord 18s linear infinite 0s;
     animation: rotateWord 18s linear infinite 0s;
     box-shadow: 4px 4px 8px black;
+    margin-left: 40px;
   }
   
   .rw-words-1 span:nth-child(2) {
@@ -294,5 +307,72 @@ h6{
   @media screen and (max-width: 320px) {
     .rw-sentence {
       font-size: 9px;
+    }
+  }
+
+
+button{
+    font-family: 'Patrick Hand', cursive;
+    color:  rgb(12, 70, 12);
+    letter-spacing: 2px;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 16px;
+  border: 4px solid darkgreen;
+  cursor: pointer;
+  display: inline-flex;
+padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: xx-large;
+  margin-left: 500px;
+  margin-top: -20px;
+  
+}
+
+
+button:hover {
+    color: red;
+  box-shadow: rgba(184, 29, 42, 0.3) 0 4px 8px, rgba(158, 24, 24, 0.3) 0 7px 13px -3px;
+  transform: translateY(-2px);
+  border: 4px solid red;
+}
+
+button:active {
+  transform: translateY(2px);
+  background-color: rgb(12, 70, 12);
+  color: #fff;
+  border: 4px solid transparent;
+  box-shadow: none;
+}
+
+hr.solid {
+height: 25px;
+width: 101.9%;
+    background-image: url('./assets/line-img.jpeg');
+    margin-top: -48px;
+  }
+
+
+  .flipX {
+    animation: 2.5s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
     }
   }
